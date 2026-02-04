@@ -64,7 +64,7 @@ body{
  
 .brand-center{ 
    justify-self: center; 
-   background: #eef3f4; 
+   background: #0f172a; 
    padding: 8px 20px; 
    border-radius: 0 0 32px 32px; 
    transform: translateY(-20px);
@@ -77,11 +77,10 @@ body{
 } 
 
 .logo-img{
-   height: 48px;
+   height: 50px;
    width: auto;
    max-width: none;
-   object-fit: contain;
-   display: block;
+   object-fit: auto;
 }
 
 .brand{ 
@@ -176,23 +175,37 @@ body{
 } 
  
 /* ================= ABOUT ================= */ 
-.about{ 
-   background: white; 
-   padding: 80px 0; 
-} 
- 
-.about-grid{ 
-   display: grid; 
-   grid-template-columns: repeat(2,1fr); 
-   gap: 40px; 
-} 
- 
-.about-highlight{ 
-   display: grid; 
-   gap: 20px; 
-   font-weight: bold; 
-   color: #0f172a; 
-} 
+.about {
+  background: white;
+  padding: 80px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.about-highlight {
+  display: grid;
+  grid-template-columns: column;
+  gap: 24px;
+}
+
+.about-highlight p {
+  background: #f1f5f9;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 600;
+  color: #0f172a;
+  transition: all 0.25s ease;
+}
+
+.about-highlight p:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
  
 /* ================= PRODUCT ================= */ 
 .product-grid{ 
